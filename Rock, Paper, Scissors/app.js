@@ -13,13 +13,12 @@ switch(computerWeapon) {
     case 3:
         console.log("The AI is running towards you with some Scissors!")
         break;
-        default:
-            console.log(`For some reason, the output is ${computerWeapon}`)
  }
  //3*3+1 possible outcomes
-while (!(playerWeapon !== "scissors" || playerWeapon !== "paper" || playerWeapon !== "rock")); {
-    
-if ((computerWeapon === 1) && (playerWeapon === "rock")) {
+if ((playerWeapon !== "scissors" && playerWeapon !== "paper" && playerWeapon !== "rock")){ 
+     
+    console.log("Wrong imput")
+}else if ((computerWeapon === 1) && (playerWeapon === "rock")) {
     console.log("You both have rock, sparks but no fire, it's a draw!");
  } 
 if ((computerWeapon === 1) && (playerWeapon === "paper")) {
@@ -46,9 +45,7 @@ if ((computerWeapon === 3) && (playerWeapon === "paper")) {
 if ((computerWeapon === 3) && (playerWeapon === "scissors")) {
     console.log("You got both scissors, draw!");
 }
-else {
-    console.log("Wrong imput")
-}
-    }
+
+    
 
 
