@@ -1,6 +1,6 @@
 //A simple rock, paper, scissors game to practice switch and if statements. A random number generates
 // a florred number that functions as a RNG game. Simple and clean.
-let playerWeapon = (prompt("Let's play Rock, Paper, Scissors. Type your choise").toLocaleLowerCase());
+let playerWeapon = (prompt("Let's play Rock, Paper, Scissors. Type your choice").toLowerCase());
 let computerWeapon = Math.floor((Math.random()*3 + 1));
  //Random number gets a 3 random possibility for an output 
 switch(computerWeapon) {
@@ -16,7 +16,9 @@ switch(computerWeapon) {
         default:
             console.log(`For some reason, the output is ${computerWeapon}`)
  }
- //3*3 possible outcomes
+ //3*3+1 possible outcomes
+while (!(playerWeapon !== "scissors" || playerWeapon !== "paper" || playerWeapon !== "rock")); {
+    
 if ((computerWeapon === 1) && (playerWeapon === "rock")) {
     console.log("You both have rock, sparks but no fire, it's a draw!");
  } 
@@ -43,4 +45,10 @@ if ((computerWeapon === 3) && (playerWeapon === "paper")) {
  } 
 if ((computerWeapon === 3) && (playerWeapon === "scissors")) {
     console.log("You got both scissors, draw!");
- } 
+}
+else {
+    console.log("Wrong imput")
+}
+    }
+
+
